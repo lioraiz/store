@@ -70,7 +70,7 @@ def list_categories():
 def add_product():
     try:
         with connection.cursor() as cursor:
-            # ID was generated and auto-incremented in the SQL generation
+            # ID was generated and auto-incremented via MySQL Workbench (PyCharm Community Edition)
             t = request.POST.get("title")
             d = request.POST.get("desc")
             p = request.POST.get("price")
